@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <animation-list android:oneshot="false">
+            <item android:duration="1000">
+                <layer-list>
+                    <item>
+                        <shape android:shape="oval">
+                            <size android:width="60dp" android:height="60dp" />
+                            <solid android:color="@color/floatingbg" />
+                            <stroke android:width="1dp" android:color="@color/white" />
+                        </shape>
+                    </item>
+                    <!--     the center piece-->
+                    <item android:width="32dp" android:height="32dp" android:drawable="@drawable/ic_round_add_24" android:gravity="center" />
+                </layer-list>
+            </item>
+            <item android:duration="1000">
+                <rotate android:fromDegrees="0" android:pivotX="50%" android:pivotY="50%" android:toDegrees="270">
+                    <layer-list>
+                        <item>
+                            <shape android:shape="oval">
+                                <size android:width="60dp" android:height="60dp" />
+                                <solid android:color="@color/floatingbg" />
+                                <stroke android:width="1dp" android:color="@color/white" />
+                            </shape>
+                        </item>
+                        <!--     the center piece-->
+                        <item android:width="32dp" android:height="32dp" android:drawable="@drawable/ic_round_add_24" android:gravity="center" />
+                    </layer-list>
+                </rotate>
+            </item>
+
+        </animation-list>
+    </item>
+    <item android:state_pressed="true">
+        <animation-list android:oneshot="false">
+            <item android:duration="1000">
+                <layer-list>
+                    <item>
+                        <shape android:shape="oval">
+                            <size android:width="80dp" android:height="80dp" />
+                            <solid android:color="@color/floatingbg" />
+                            <stroke android:width="1dp" android:color="@color/purple_200" />
+                        </shape>
+                    </item>
+                    <!--     the center piece-->
+                    <item android:width="32dp" android:height="32dp" android:drawable="@drawable/ic_autorenew_24" android:gravity="center" />
+                </layer-list>
+            </item>
+            <item android:duration="1000">
+                <rotate android:fromDegrees="0" android:pivotX="50%" android:pivotY="50%" android:toDegrees="270">
+                    <layer-list>
+                        <item>
+                            <shape android:shape="oval">
+                                <size android:width="80dp" android:height="80dp" />
+                                <solid android:color="@color/floatingbg" />
+                                <stroke android:width="1dp" android:color="@color/purple_200" />
+                            </shape>
+                        </item>
+                        <!--     the center piece-->
+                        <item android:width="32dp" android:height="32dp" android:drawable="@drawable/ic_autorenew_24" android:gravity="center" />
+                    </layer-list>
+                </rotate>
+            </item>
+
+        </animation-list>
+    </item>
+</selector>
